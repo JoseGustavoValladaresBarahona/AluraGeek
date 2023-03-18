@@ -1,0 +1,21 @@
+
+ .promocion__descuento{
+  padding-top: 30px;
+ }
+ 
+ .imagen__de__fondo{
+  position: absolute;
+  z-index: -1;
+  margin: 0 auto;
+ }
+ 
+ .promocion__titulo{
+   padding-top: 145px;
+ }
+ 
+ .btn__promo{
+   background-color: #4169E1;
+   color: white;
+   border: none;
+   padding: 10px;
+ }

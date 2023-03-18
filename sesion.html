@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web ecommerce"
+    />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/mensaje.css">
+    <link rel="stylesheet" href="../css/sesion.css">
+    <title>AluraGeet||Sesión</title>
+  </head>
+
+  <body>
+    <section>
+      <div class='App'>
+        <img src="../Imagenes/logoAlura.png" width= '178px' height = '27px' alt='logo' class="logo"/>
+        <input class='app__input' type="search"  placeholder='¿Que deseas buscar?'
+         />
+      </div>
+    </section>
+    
+    <section>
+      <div class='ingreso'>
+       <form >
+         <h3>Inicio de Sesión</h3>
+         <input class='ingreso__input' type='email' name="email" placeholder='Escriba su correo electrónico ' required 
+          /><br/>
+         <br/>
+         <input class='ingreso__input' type='password' name="password" placeholder='Escriba su contraseña' minlength="8" maxlength="8"  required
+          /><br/>
+         <button type='Submit' name="btn" class='ingreso__btn' onclick="validarSesion()" >Entrar
+          </button>
+         </form>
+      </div>
+    </section>
+     
+    <section>
+     <div class='grid__container'>
+      <div class='grid-imagen'>
+       <img src='../Imagenes/logoAlura.png' width= '178px' height = '27px' alt='logo' class="logo"/>
+       </div>
+     <nav class='grid__nav'>
+       <a src='' href='#' class='grid__nav__link'>Quienes somos</a>
+       <a src='' href='#' class='grid__nav__link'>Política de privacidad</a>
+       <a src='' href='#' class='grid__nav__link'>Programa de fidelidad</a>
+       <a src='' href='#' class='grid__nav__link'>Nuestras Tiendas</a>
+       <a src='' href='#' class='grid__nav__link'>Quiero ser franquiciado</a>
+       <a src='' href='#' class='grid__nav__link'>Anunciese aquí</a>
+     </nav>
+     <form action="http://localhost:5000/Mensajes" method="POST" class='grid__form'>
+        <h3>Hable con nosotros</h3>
+        <input 
+        type='text'
+        name="nombre"
+        class='datos'
+        placeholder='Nombre'
+        required
+        />
+        <textarea
+         type='text'
+         name="mensaje"
+         class='datos'
+         row='10' col='30'
+         placeholder='Escriba su mensaje'
+         required
+         ></textarea>
+         <button class='btn-enviar'
+         >Enviar Mensaje</button>
+     </form>
+    </div>
+   </section>
+   <script src="../Servicios/Sesion.js">
+       </script>
+  </body>
+</html>

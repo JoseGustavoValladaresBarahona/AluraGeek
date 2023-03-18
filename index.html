@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web ecommerce"
+    />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/mensaje.css">
+    <link rel="stylesheet" href="../css/promociones.css">
+    <link rel="stylesheet" href="../css/mostrar-productos.css">
+    <link rel="stylesheet" href="../css/footer.css">  
+    <title>AluraGeet</title>
+  </head>
+
+  <body>
+    <section>
+      <div class='App'>
+        <img src="../Imagenes/logoAlura.png" width= '178px' height = '27px' alt='logo' class="logo"/>
+        <input class='app__input' type="search" name="search" placeholder='¿Que deseas buscar?'/>
+       
+        <button class='app__btn' 
+       onclick="location.href='sesion.html'">Login</button>
+      </div>
+    </section>
+    <section >
+     <div class='promocion__descuento'>
+       <img class='imagen__de__fondo'
+         src="../Imagenes/fondo.jpeg"
+         alt='imagen de fondo' width='98%' height='300px'/>
+       <div class='promocion__titulo'>
+         <h1>Marzo Promocional</h1>
+         <p>Productos selecionados con 33% de descuento</p>
+         <button class='btn__promo'>Ver Productos</button>
+       </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class='nombre__categoria'>
+        <h3>Celulares</h3>
+        <a href=''>Ver todo</a>
+      </div>
+      <div id="tbody"></div>
+      <div class='nombre__categoria'>
+        <h3>Computadoras</h3>
+        <a href=''>Ver todo</a>
+      </div>
+      <div id="tbodypc"></div>
+     </section>
+     
+    <section>
+     <div class='grid__container'>
+      <div class='grid-imagen'>
+       <img src='../Imagenes/logoAlura.png' width= '178px' height = '27px' alt='logo' class="logo"/>
+       </div>
+     <nav class='grid__nav'>
+       <a src='' href='#' class='grid__nav__link'>Quienes somos</a>
+       <a src='' href='#' class='grid__nav__link'>Política de privacidad</a>
+       <a src='' href='#' class='grid__nav__link'>Programa de fidelidad</a>
+       <a src='' href='#' class='grid__nav__link'>Nuestras Tiendas</a>
+       <a src='' href='#' class='grid__nav__link'>Quiero ser franquiciado</a>
+       <a src='' href='#' class='grid__nav__link'>Anunciese aquí</a>
+     </nav>
+     <form action="http://localhost:5000/Mensajes" method="POST" class='grid__form'>
+        <h3>Hable con nosotros</h3>
+        <input 
+        type='text'
+        name="nombre"
+        class='datos'
+        placeholder='Nombre'
+        required
+        />
+        <textarea
+         type='text'
+         name="mensaje"
+         class='datos'
+         row='10' col='30'
+         placeholder='Escriba su mensaje'
+         required
+         ></textarea>
+         <button type='Submit' class='btn-enviar'
+         >Enviar Mensaje</button>
+     </form>
+    </div>
+    </section>
+    <section>
+      <footer class="footer">
+       <p> Desarrollado por Jose Gustavo Valladares Barahona</p></br>
+       <a href="https://linkedin.com/in/josé-gustavo-valladares-barahona">Linkedin</a>
+       <br/>
+       <a href="https://github.com/JoseGustavoValladaresBarahona"> GitHub</a>
+      </footer>
+    </section>
+    <script src="../Servicios/Mostrar-Producto.js"  src="../Servicios/Promo.js">
+     </script>
+  </body>
+</html>
+        
+          
