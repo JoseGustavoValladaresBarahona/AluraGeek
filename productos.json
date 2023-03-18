@@ -1,7 +1,7 @@
 {
   "Productos": [
     {
-      "imgUrl": "../Imagenes/photo-1640551497504-ec05b9e50b50.jpeg",
+      "imgUrl": "/Imagenes/photo-1640551497504-ec05b9e50b50.jpeg",
       "categoria": "pc",
       "nombre": "laptop",
       "precio": "150$",
@@ -9,7 +9,7 @@
       "id": 1
     },
     {
-      "imgUrl": "../Imagenes/photo-1544807259-20d81cbd0766.jpeg",
+      "imgUrl": "/Imagenes/photo-1544807259-20d81cbd0766.jpeg",
       "categoria": "pc",
       "nombre": "Laptop",
       "precio": "250$",
@@ -17,7 +17,7 @@
       "id": 2
     },
     {
-      "imgUrl": "../Imagenes/photo-1628072004495-19b19c64dee1.jpeg",
+      "imgUrl": "/Imagenes/photo-1628072004495-19b19c64dee1.jpeg",
       "categoria": "pc",
       "nombre": "Laptop",
       "precio": "300$",
@@ -25,7 +25,7 @@
       "id": 3
     },
     {
-      "imgUrl": "../Imagenes/photo-1666238854502-b2eb911af153.jpeg",
+      "imgUrl": "/Imagenes/photo-1666238854502-b2eb911af153.jpeg",
       "categoria": "movil",
       "nombre": "Pixel Google",
       "precio": "100$",
@@ -33,7 +33,7 @@
       "id": 4
     },
     {
-      "imgUrl": "../Imagenes/photo-1574755297613-7b2c5fee60ce.png",
+      "imgUrl": "/Imagenes/photo-1574755297613-7b2c5fee60ce.png",
       "categoria": "movil",
       "nombre": "Iphone",
       "precio": "400$",
@@ -41,7 +41,7 @@
       "id": 5
     },
     {
-      "imgUrl": "../Imagenes/samsung.jpg",
+      "imgUrl": "/Imagenes/samsung.jpg",
       "categoria": "movil",
       "nombre": "Samsung",
       "precio": "400$",
