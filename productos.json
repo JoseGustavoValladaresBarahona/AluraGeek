@@ -5,7 +5,7 @@
       "categoria": "pc",
       "nombre": "laptop",
       "precio": "150$",
-      "descripcion":"Hp con 2GB de RAM y 128 GB SSD",
+      "descripcion": "Hp con 2GB de RAM y 128 GB SSD",
       "id": 1
     },
     {
@@ -13,7 +13,7 @@
       "categoria": "pc",
       "nombre": "Laptop",
       "precio": "250$",
-      "descripcion":"Hp con 4GB de RAM y 128 GB SSD",
+      "descripcion": "Hp con 4GB de RAM y 128 GB SSD",
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "categoria": "pc",
       "nombre": "Laptop",
       "precio": "300$",
-      "descripcion":"Dell con 4GB de RAM y 128 GB SSD",
+      "descripcion": "Dell con 4GB de RAM y 128 GB SSD",
       "id": 3
     },
     {
@@ -29,7 +29,7 @@
       "categoria": "movil",
       "nombre": "Pixel Google",
       "precio": "100$",
-      "descripcion":"Red 4g con 2GB de RAM, 32 GB SD",
+      "descripcion": "Red 4g con 2GB de RAM, 32 GB SD",
       "id": 4
     },
     {
@@ -37,7 +37,7 @@
       "categoria": "movil",
       "nombre": "Iphone",
       "precio": "400$",
-     "descripcion":"Red 5g, 6GB RAM y 128 GB SD",
+      "descripcion": "Red 5g, 6GB RAM y 128 GB SD",
       "id": 5
     },
     {
@@ -45,7 +45,7 @@
       "categoria": "movil",
       "nombre": "Samsung",
       "precio": "400$",
-     "descripcion":"Red 5g, 4GB RAM y 64GB SD",
+      "descripcion": "Red 5g, 4GB RAM y 64GB SD",
       "id": 6
     }
   ],
@@ -59,6 +59,11 @@
       "nombre": "Gustavo",
       "mensaje": "Funciona igual",
       "id": "LSuNtra"
+    },
+    {
+      "nombre": "Bejeb",
+      "mensaje": "Hhskeekek",
+      "id": "VxaWYja"
     }
   ],
   "Admin": [
