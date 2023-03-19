@@ -2,7 +2,7 @@
   "name": "AluraGeek",
   "version": "1.0.0",
   "description": "web ecommerc",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "server":"json-server -w productos.json -p 5000"
   },

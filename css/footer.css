@@ -1,5 +1,12 @@
 
  .footer{
-   display: grid;
-   text-align-last: center;
+   text-align: center;
+ }
+ .icon{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ 
+ .bi-github{
+   color: black;
  }
