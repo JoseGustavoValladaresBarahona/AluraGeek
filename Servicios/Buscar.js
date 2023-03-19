@@ -1,21 +1,16 @@
 
- /*const dato = [];*/
-
     let tbody=document.getElementById("tbody");
-    tbody.append(addElement());
-    tbodypc.append(addElement());
     
-     fetch('http://localhost:5000/Productos?categoria=movil')
+     fetch(`'http://localhost:5000/Productos?categoria=${tbody}'`)
       .then(res => res.json())
       .then(json => { 
            json.map(dato =>{
-             console.log(dato);
-            tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id));
+            alert(tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id)));
         })
       })
 
-      
-      function addElement(imgUrl,categoria, nombre, precio, descripcion, id){
+      function Buscarglobal(imgUrl,categoria, nombre, precio, descripcion, id){
+        alert(
           let td =document.createElement("div");
            td.innerHTML =
          `<img src="${imgUrl}" width="100px" height="100px"/>
@@ -26,4 +21,5 @@
           <p>${id}</p>
            <a src='' href='#'>Ver Productos</a> `
           return td;
+          );
       }

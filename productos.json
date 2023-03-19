@@ -1,60 +1,52 @@
 {
   "Productos": [
     {
-      "imgUrl": "/Imagenes/photo-1640551497504-ec05b9e50b50.jpeg",
-      "categoria": "pc",
+      "imgUrl": "Imagenes/photo-1640551497504-ec05b9e50b50.jpeg",
+      "categoria": "Pc",
       "nombre": "laptop",
       "precio": "150$",
       "descripcion": "Hp con 2GB de RAM y 128 GB SSD",
       "id": 1
     },
     {
-      "imgUrl": "/Imagenes/photo-1544807259-20d81cbd0766.jpeg",
-      "categoria": "pc",
+      "imgUrl": "Imagenes/photo-1544807259-20d81cbd0766.jpeg",
+      "categoria": "Pc",
       "nombre": "Laptop",
       "precio": "250$",
       "descripcion": "Hp con 4GB de RAM y 128 GB SSD",
       "id": 2
     },
     {
-      "imgUrl": "/Imagenes/photo-1628072004495-19b19c64dee1.jpeg",
-      "categoria": "pc",
+      "imgUrl": "Imagenes/photo-1628072004495-19b19c64dee1.jpeg",
+      "categoria": "Pc",
       "nombre": "Laptop",
       "precio": "300$",
       "descripcion": "Dell con 4GB de RAM y 128 GB SSD",
       "id": 3
     },
     {
-      "imgUrl": "/Imagenes/photo-1666238854502-b2eb911af153.jpeg",
-      "categoria": "movil",
+      "imgUrl": "Imagenes/photo-1666238854502-b2eb911af153.jpeg",
+      "categoria": "Movil",
       "nombre": "Pixel Google",
       "precio": "100$",
       "descripcion": "Red 4g con 2GB de RAM, 32 GB SD",
       "id": 4
     },
     {
-      "imgUrl": "/Imagenes/photo-1574755297613-7b2c5fee60ce.png",
-      "categoria": "movil",
+      "imgUrl": "Imagenes/photo-1574755297613-7b2c5fee60ce.png",
+      "categoria": "Movil",
       "nombre": "Iphone",
       "precio": "400$",
       "descripcion": "Red 5g, 6GB RAM y 128 GB SD",
       "id": 5
     },
     {
-      "imgUrl": "/Imagenes/samsung.jpg",
-      "categoria": "movil",
+      "imgUrl": "Imagenes/samsung.jpg",
+      "categoria": "Movil",
       "nombre": "Samsung",
       "precio": "400$",
       "descripcion": "Red 5g, 4GB RAM y 64GB SD",
       "id": 6
-    },
-    {
-      "imgUrl": "http://localhost:5000/Admin",
-      "categoria": "Movil",
-      "nombre": "Djdjjd",
-      "precio": "544",
-      "descripcion": "Sssd",
-      "id": 7
     }
   ],
   "Mensajes": [
@@ -64,39 +56,9 @@
       "id": "1"
     },
     {
-      "nombre": "Gustavo",
-      "mensaje": "Funciona igual",
-      "id": "LSuNtra"
-    },
-    {
-      "nombre": "Bejeb",
-      "mensaje": "Hhskeekek",
-      "id": "VxaWYja"
-    },
-    {
-      "nombre": "Ll",
-      "mensaje": "Dd",
-      "id": "a4nvQuS"
-    },
-    {
-      "nombre": "Jii",
-      "mensaje": "Klll",
-      "id": "VO0v-Db"
-    },
-    {
-      "nombre": "Kkk",
-      "mensaje": "Uiik",
-      "id": "YdM8aoN"
-    },
-    {
-      "nombre": "Jjdj",
-      "mensaje": "Dde",
-      "id": "k6OERjM"
-    },
-    {
-      "nombre": "Ndjeen",
-      "mensaje": "Dde",
-      "id": "c2FJv36"
+      "nombre": "Ren",
+      "mensaje": "Xdd",
+      "id": "XfnOHdQ"
     }
   ],
   "Admin": [

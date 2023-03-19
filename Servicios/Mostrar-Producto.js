@@ -4,7 +4,7 @@
     let tbody=document.getElementById("tbody");
     let tbodypc=document.getElementById("tbodypc");
     
-     fetch('http://localhost:5000/Productos?categoria=movil')
+     fetch('http://localhost:5000/Productos?categoria=Movil')
       .then(res => res.json())
       .then(json => { 
            json.map(dato =>{
@@ -12,7 +12,7 @@
         })
       })
       
-      fetch('http://localhost:5000/Productos?categoria=pc')
+      fetch('http://localhost:5000/Productos?categoria=Pc')
       .then(res => res.json())
       .then(json => { 
            json.map(dato =>{
