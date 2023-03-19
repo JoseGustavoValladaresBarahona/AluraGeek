@@ -47,6 +47,14 @@
       "precio": "400$",
       "descripcion": "Red 5g, 4GB RAM y 64GB SD",
       "id": 6
+    },
+    {
+      "imgUrl": "http://localhost:5000/Admin",
+      "categoria": "Movil",
+      "nombre": "Djdjjd",
+      "precio": "544",
+      "descripcion": "Sssd",
+      "id": 7
     }
   ],
   "Mensajes": [
@@ -79,6 +87,16 @@
       "nombre": "Kkk",
       "mensaje": "Uiik",
       "id": "YdM8aoN"
+    },
+    {
+      "nombre": "Jjdj",
+      "mensaje": "Dde",
+      "id": "k6OERjM"
+    },
+    {
+      "nombre": "Ndjeen",
+      "mensaje": "Dde",
+      "id": "c2FJv36"
     }
   ],
   "Admin": [
