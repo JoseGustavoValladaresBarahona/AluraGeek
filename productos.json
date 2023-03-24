@@ -47,6 +47,14 @@
       "precio": "150$",
       "descripcion": "Red 4g con 3GB de RAM, 32 GB SD",
       "id": 4
+    },
+    {
+      "id": 5,
+      "imgUrl": {},
+      "categoria": "D",
+      "nombre": "D",
+      "precio": "4",
+      "descripcion": "D"
     }
   ],
   "Mensajes": [
@@ -54,6 +62,11 @@
       "nombre": "Dev A",
       "mensaje": "Buen trabajo",
       "id": "1"
+    },
+    {
+      "nombre": "Dev G",
+      "mensaje": "Funciona",
+      "id": "61NkKcJ"
     }
   ],
   "Admin": [

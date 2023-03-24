@@ -1,5 +1,4 @@
 
-let id = document.getElementById('id').value;
 const btn = document.querySelector('#btn');
 const formulario = document.querySelector('#formulario');
 const respuesta = document.querySelector('#respuesta');
@@ -12,17 +11,16 @@ const getData = () => {
   return datosProcesados;
 }
 
-let id =20;
 
 const putData = async () => {
     const newUser = getData();
    try{
-    const response = await fetch(`http://localhost:5000/Productos/${id}`, {
+    const response = await fetch(`http://localhost:5000/Productos/${newUser.id}`, {
     method: 'PUT',
     headers: {'Content-Type': 'application/json'},
      body: JSON.stringify(newUser)
     });
-    alert(id)
+ alert(newUser.id)
     if(response.ok){
         const jsonResponse = await response.json();
         const {imgUrl, categoria, nombre, precio, descripcion} = jsonResponse;
