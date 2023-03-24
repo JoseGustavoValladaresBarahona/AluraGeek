@@ -1,13 +1,16 @@
 
-    let tbody=document.getElementById("tbody");
+ const Buscar = ()=> {
+    let tbody=document.getElementById("buscar");
     
-     fetch(`'http://localhost:5000/Productos?categoria=${tbody}'`)
+     fetch(`'http://localhost:5000/Productos?q=${tbody}'`)
       .then(res => res.json())
       .then(json => { 
            json.map(dato =>{
-            alert(tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id)));
+             alert(dato)
+           tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id));*/
         })
       })
+
 
       function Buscarglobal(imgUrl,categoria, nombre, precio, descripcion, id){
         alert(
@@ -23,3 +26,4 @@
           return td;
           );
       }
+}

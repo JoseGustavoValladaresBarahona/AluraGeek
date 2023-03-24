@@ -22,29 +22,32 @@
     
     <section>
      <div class='ingreso'>
-      <form id="formulario" data-form>
-         <h1>Agregar Producto</h1>
-         <input class='ingreso__input' type='file' id="input-file" name="imgUrl" placeholder='Escriba la url de la imagen' required data-url
+      <form id="formulario">
+         <h1>Editar Producto</h1>
+        <input class='ingreso__input' type='number' id="id" name="id" placeholder="id" required
          />
          <br/>
-         <input class='ingreso__input' type='text' name="categoria" placeholder='Escriba la categoria del producto' required data-categoria 
+         <input class='ingreso__input' type='file' id="input-file" name="imgUrl" placeholder='Escriba la url de la imagen' required 
          />
          <br/>
-         <input class='ingreso__input' type='text' name="nombre" placeholder='Escriba el nombre del producto' required data-nombre
+         <input class='ingreso__input' type='text' name="categoria" placeholder='Escriba la categoria del producto' required 
+         />
+         <br/>
+         <input class='ingreso__input' type='text' name="nombre" placeholder='Escriba el nombre del producto' required
           />
           <br/>
-         <input class='ingreso__input' type='number' name="precio" placeholder='Escriba el precio del producto' required data-precio
+         <input class='ingreso__input' type='number' name="precio" placeholder='Escriba el precio del producto' required
           />
          <br/>
          <textarea 
           class='ingreso__input' type='text' name="descripcion" row='10' col='30' placeholder='Descripción del producto' 
-           required data-descripcion
+           required 
            ></textarea>
            <br/>
-         <button data-btn type='submit' class='ingreso__btn' id="btn"
-           >Agregar</button>
+         <button type='submit' class='ingreso__btn' id="btn"
+           >Editar</button>
        </form>
-       <div data-respuesta id="respuesta"></div>
+       <div id="respuesta"></div>
       </div>
     </section>
      
@@ -97,7 +100,7 @@
      </div>
       </footer>
     </section>
-    <script  src="Servicios/Agregar-Producto.js">
+    <script  src="Servicios/Editar-Producto.js">
     </script>
   </body>
 </html>

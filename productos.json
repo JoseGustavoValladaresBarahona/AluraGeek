@@ -33,20 +33,20 @@
       "id": 4
     },
     {
-      "imgUrl": "Imagenes/photo-1574755297613-7b2c5fee60ce.png",
+      "imgUrl": "Imagenes/photo-1615215271299-608ada121f72.jpeg",
       "categoria": "Movil",
-      "nombre": "Iphone",
-      "precio": "400$",
-      "descripcion": "Red 5g, 6GB RAM y 128 GB SD",
-      "id": 5
+      "nombre": "Poco Phone",
+      "precio": "200$",
+      "descripcion": "Red 4g con 6GB de RAM, 64 GB SD",
+      "id": 4
     },
     {
-      "imgUrl": "Imagenes/samsung.jpg",
+      "imgUrl": "Imagenes/photo-1598721175026-45c2e66e81d3.jpeg",
       "categoria": "Movil",
-      "nombre": "Samsung",
-      "precio": "400$",
-      "descripcion": "Red 5g, 4GB RAM y 64GB SD",
-      "id": 6
+      "nombre": "Asset",
+      "precio": "150$",
+      "descripcion": "Red 4g con 3GB de RAM, 32 GB SD",
+      "id": 4
     }
   ],
   "Mensajes": [
@@ -54,11 +54,6 @@
       "nombre": "Dev A",
       "mensaje": "Buen trabajo",
       "id": "1"
-    },
-    {
-      "nombre": "Ren",
-      "mensaje": "Xdd",
-      "id": "XfnOHdQ"
     }
   ],
   "Admin": [

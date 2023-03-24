@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/mensaje.css"/>
-    <link rel="stylesheet" href="css/agregar-producto.css"/>
+    <link rel="stylesheet" href="css/sesion.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/Menu-Admin.css"/>
     <title>AluraGeet||Admin</title>
   </head>
 
@@ -15,43 +16,40 @@
     <section>
       <div class='App'>
         <img src="Imagenes/logoAlura.png" width= '178px' height = '27px' alt='logo' class="logo"/>
-        <input class='app__input' type="search" placeholder='¿Que deseas buscar?'
+        <input class='app__input' type="search"  placeholder='¿Que deseas buscar?'
          />
       </div>
     </section>
     
     <section>
-     <div class='ingreso'>
-      <form id="formulario" data-form>
-         <h1>Agregar Producto</h1>
-         <input class='ingreso__input' type='file' id="input-file" name="imgUrl" placeholder='Escriba la url de la imagen' required data-url
-         />
+      <div class='ingreso'>
+       <form >
+         <h3>Menú Administrador</h3>
+         <button class='btn__consultar' onclick="location.href='Consultar-Registro.html'">Consultar
+          </button>
          <br/>
-         <input class='ingreso__input' type='text' name="categoria" placeholder='Escriba la categoria del producto' required data-categoria 
-         />
-         <br/>
-         <input class='ingreso__input' type='text' name="nombre" placeholder='Escriba el nombre del producto' required data-nombre
-          />
+         <button name="btn"  class='btn__agregar'
+          onclick="location.href='agregar-producto.html'"
+          >Agregar
+          </button>
           <br/>
-         <input class='ingreso__input' type='number' name="precio" placeholder='Escriba el precio del producto' required data-precio
-          />
-         <br/>
-         <textarea 
-          class='ingreso__input' type='text' name="descripcion" row='10' col='30' placeholder='Descripción del producto' 
-           required data-descripcion
-           ></textarea>
+          <button name="btn"  class='btn__editar'
+          onclick="location.href='Editar-Producto.html'"
+          >Editar
+          </button>
            <br/>
-         <button data-btn type='submit' class='ingreso__btn' id="btn"
-           >Agregar</button>
+         <button name="btn"  class='btn__eliminar'
+         onclick="location.href='Eliminar-Producto.html'"
+          >Eliminar
+          </button>
        </form>
-       <div data-respuesta id="respuesta"></div>
       </div>
     </section>
      
     <section>
      <div class='grid__container'>
       <div class='grid-imagen'>
-       <img src='Imagenes/logoAlura.png' class="logo"width= '178px' height = '27px' alt='logo'/>
+       <img src='Imagenes/logoAlura.png' width= '178px' height = '27px' alt='logo' class="logo"/>
        </div>
      <nav class='grid__nav'>
        <a src='' href='#' class='grid__nav__link'>Quienes somos</a>
@@ -78,12 +76,12 @@
          placeholder='Escriba su mensaje'
          required
          ></textarea>
-        <button type="submit" class='btn-enviar'
+         <button class='btn-enviar'
          >Enviar Mensaje</button>
      </form>
     </div>
-       </section>
-    <section>
+   </section>
+   <section>
       <footer class="footer">
        <p> Desarrollado por Jose Gustavo Valladares Barahona</p></br>
      <div class="icon">
@@ -92,14 +90,13 @@
 </svg></a>
        <br/>
        <a href="https://github.com/JoseGustavoValladaresBarahona"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-8.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
 </svg></a>
      </div>
       </footer>
     </section>
-    <script  src="Servicios/Agregar-Producto.js">
-    </script>
+   <script>
+      
+   </script>
   </body>
 </html>
-
-

@@ -1,0 +1,37 @@
+
+   .btn__consultar{
+    color: white;
+    background-color: #4169E1;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  .btn__agregar{
+    color: white;
+    background-color: #2E8B57;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+   .btn__editar{
+    color: white;
+    background-color: #2E8B57;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  .btn__eliminar{
+    color: white;
+    background-color: tomato;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  

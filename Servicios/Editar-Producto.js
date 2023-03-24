@@ -1,4 +1,5 @@
 
+let id = document.getElementById('id').value;
 const btn = document.querySelector('#btn');
 const formulario = document.querySelector('#formulario');
 const respuesta = document.querySelector('#respuesta');
@@ -11,16 +12,17 @@ const getData = () => {
   return datosProcesados;
 }
 
+let id =20;
 
-const postData = async () => {
-   const newUser = getData();
+const putData = async () => {
+    const newUser = getData();
    try{
-    const response = await fetch('http://localhost:5000/Productos', {
-    method: 'POST',
+    const response = await fetch(`http://localhost:5000/Productos/${id}`, {
+    method: 'PUT',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(newUser)
+     body: JSON.stringify(newUser)
     });
-    
+    alert(id)
     if(response.ok){
         const jsonResponse = await response.json();
         const {imgUrl, categoria, nombre, precio, descripcion} = jsonResponse;
@@ -29,13 +31,12 @@ const postData = async () => {
         `
         <br />
         <div> 
-           Se registró con éxito la siguiente información:
+           Se actualizo con éxito el registro:
           <img img: ${imgUrl} />
           <p>nombre: ${nombre}</p> 
           <p>categoría: ${categoria}<p> 
           <p>precio: ${precio}</p>
           <p>descripción:${descripcion}</p> 
-         
         </div>`
     }
    
@@ -46,7 +47,7 @@ const postData = async () => {
 
   btn.addEventListener('click', (event) => {
   event.preventDefault();
-  postData();
+  putData();
 })
 
  

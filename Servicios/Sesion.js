@@ -1,17 +1,22 @@
 
-       
-
-  function validar(){
-       const email = document.getElementById("email");
-       const password = document.getElementById("password");
-    
-      fetch('http://localhost:5000/Admin')
-        .then(res => res.json())
-        .then(datos =>{
-          datos.map(dato =>{
-           alert("Acceso concedido");
-           "location.href='Servicios/agregar-producto.html'"
-          })
+const validar = () =>{     
+  let correo = document.getElementById("correo").value;
+  let password = document.getElementById("password").value;
+      
+    fetch("http://localhost:5000/Admin")
+      .then(res => res.json())
+      .then(json => { 
+         json.map(dato =>{
+          if(dato.correo === correo && dato.password === password){
+            alert("Acceso concedido");
+            window.location.href="Menu-Admin.html"
+          }else{
+            alert("Su usuario o contraseña es incorrecto, intente de nuevo");
+          }
+          
         })
-        
+      })
 }
+
+
+        

@@ -24,14 +24,16 @@
       <div class='ingreso'>
        <form >
          <h3>Inicio de Sesión</h3>
-         <input class='ingreso__input' type='email' id="email" placeholder='Escriba su correo electrónico ' required 
+         <input class='ingreso__input' type='email' id="correo" placeholder='Escriba su correo electrónico ' required 
           /><br/>
          <br/>
          <input class='ingreso__input' type='password' id="password" placeholder='Escriba su contraseña' minlength="8" maxlength="8"  required
           /><br/>
-         <button type='Submit' name="btn" onclick="location.href='agregar-producto.html'" class='ingreso__btn'>Entrar
+         <button type='Submit' name="btn"  class='ingreso__btn'
+         onclick="validar()"
+         >Entrar
           </button>
-         </form>
+       </form>
       </div>
     </section>
      
@@ -84,7 +86,7 @@
      </div>
       </footer>
     </section>
-   <script src="Servicios/Sesion.js" src="Servicios/Mensaje.js">
+   <script src="Servicios/Sesion.js">
        </script>
   </body>
 </html>

@@ -1,6 +1,4 @@
 
- /*const dato = [];*/
-
     let tbody=document.getElementById("tbody");
     let tbodypc=document.getElementById("tbodypc");
     
@@ -24,11 +22,12 @@
           let td =document.createElement("div");
            td.innerHTML =
          `<img src="${imgUrl}" width="150px" height="150px"/>
-          <p class="justificar">${categoria}</p>
-          <p class="justificar">${nombre}</p>
-          <p class="justificar">${precio}</p>
-          <p class="justificar">${descripcion}</p>
-          <p class="justificar">${id}</p>
+          <p>${categoria}</p>
+          <p>${nombre}</p>
+          <p>${precio}</p>
+          <p>${descripcion}</p>
+          <p>${id}</p>
            <a src='' href='#'>Ver Productos</a> `
           return td;
       }
+     

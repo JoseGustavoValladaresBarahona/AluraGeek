@@ -1,10 +1,11 @@
 
+
 const btn = document.querySelector('#btn');
 const formulario = document.querySelector('#formulario');
 const respuesta = document.querySelector('#respuesta');
+//let Id = document.getElementById('Id').value;
 
-
-const getData = () => {
+  const getData = () => {
   const datos = new FormData(formulario);
   const datosProcesados = Object.fromEntries(datos.entries());
   formulario.reset();
@@ -13,12 +14,12 @@ const getData = () => {
 
 
 const postData = async () => {
-   const newUser = getData();
+  // const newUser = getData();
    try{
-    const response = await fetch('http://localhost:5000/Productos', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(newUser)
+    const response = await fetch(`http://localhost:5000/Productos/${id.value}`, {
+    method: 'DELETE',
+    headers: {'Content-Type': 'application/json'}
+   //  body: JSON.stringify(newUser)
     });
     
     if(response.ok){
@@ -27,15 +28,9 @@ const postData = async () => {
        
         respuesta.innerHTML = 
         `
-        <br />
+        <br/>
         <div> 
-           Se registró con éxito la siguiente información:
-          <img img: ${imgUrl} />
-          <p>nombre: ${nombre}</p> 
-          <p>categoría: ${categoria}<p> 
-          <p>precio: ${precio}</p>
-          <p>descripción:${descripcion}</p> 
-         
+           El registro con ID: ${id.value} se elimino con éxito.
         </div>`
     }
    
