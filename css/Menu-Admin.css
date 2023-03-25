@@ -8,6 +8,11 @@
     width: 200px;
   }
   
+  .btn__consultar:hover{
+    transform: scale(1.1);
+    background-color: grey;
+  }
+  
   .btn__agregar{
     color: white;
     background-color: #2E8B57;
@@ -15,6 +20,10 @@
     padding: 15px;
     margin-top: 10px;
     width: 200px;
+  }
+    .btn__agregar:hover{
+    transform: scale(1.1);
+    background-color: grey;
   }
   
    .btn__editar{
@@ -26,6 +35,11 @@
     width: 200px;
   }
   
+  .btn__editar:hover{
+    transform: scale(1.1);
+    background-color: grey;
+  }
+  
   .btn__eliminar{
     color: white;
     background-color: tomato;
@@ -35,3 +49,7 @@
     width: 200px;
   }
  
+  .btn__eliminar:hover{
+    transform: scale(1.1);
+    background-color: grey;
+  }

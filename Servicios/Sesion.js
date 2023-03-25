@@ -11,7 +11,7 @@ const validar = () =>{
          json.map(dato =>{
            if(dato.correo === correo || dato.password === password){
             alert("Acceso concedido");
-            window.open("Menu-Admin.html")
+            location.href="Menu-Admin.html"
           }else{
             alert("Su usuario o contraseña es incorrecto, intente de nuevo");
           }
