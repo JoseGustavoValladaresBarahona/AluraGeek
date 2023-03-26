@@ -1,12 +1,12 @@
 {
   "Productos": [
     {
+      "id": 1,
       "imgUrl": "Imagenes/photo-1640551497504-ec05b9e50b50.jpeg",
       "categoria": "Pc",
-      "nombre": "laptop",
-      "precio": "150$",
-      "descripcion": "Hp con 2GB de RAM y 128 GB SSD",
-      "id": 1
+      "nombre": "Laptop",
+      "precio": "200$",
+      "descripcion": "Lenovo con 2GB de RAM y 64 GB SSD"
     },
     {
       "imgUrl": "Imagenes/photo-1544807259-20d81cbd0766.jpeg",
@@ -17,12 +17,12 @@
       "id": 2
     },
     {
-      "imgUrl": "Imagenes/photo-1628072004495-19b19c64dee1.jpeg",
+      "id": 3,
+      "imgUrl": "Imagenes/photo-1549098473-5cc4347b3eb3.jpeg",
       "categoria": "Pc",
       "nombre": "Laptop",
-      "precio": "300$",
-      "descripcion": "Dell con 4GB de RAM y 128 GB SSD",
-      "id": 3
+      "precio": "200$",
+      "descripcion": "Asus con 6GB de RAM y 256 GB SSD"
     },
     {
       "imgUrl": "Imagenes/photo-1666238854502-b2eb911af153.jpeg",
@@ -38,7 +38,7 @@
       "nombre": "Poco Phone",
       "precio": "200$",
       "descripcion": "Red 4g con 6GB de RAM, 64 GB SD",
-      "id": 4
+      "id": 5
     },
     {
       "imgUrl": "Imagenes/photo-1598721175026-45c2e66e81d3.jpeg",
@@ -46,15 +46,15 @@
       "nombre": "Asset",
       "precio": "150$",
       "descripcion": "Red 4g con 3GB de RAM, 32 GB SD",
-      "id": 4
+      "id": 6
     },
     {
-      "id": 5,
-      "imgUrl": {},
-      "categoria": "D",
-      "nombre": "D",
-      "precio": "4",
-      "descripcion": "D"
+      "id": 7,
+      "imgUrl": "Imagenes/photo-1569721983011-6c8d6732d384.jpeg",
+      "categoria": "Pc",
+      "nombre": "Ipad",
+      "precio": "300$",
+      "descripcion": "Ipad 4g con 2GB RAM y 64GB SSD"
     }
   ],
   "Mensajes": [
@@ -73,6 +73,40 @@
     {
       "correo": "admin@gmail.com",
       "password": "admin123"
+    }
+  ],
+    "Promo": [
+    {
+      "imgUrl": "Imagenes/promoglobal.png",
+      "categoria": "Pc",
+      "nombre": "laptop",
+      "precio": "150$",
+      "descripcion": "Dell 4GB RAM con 128GB SSD y pantalla de 15 pulg",
+      "id": 1
+    },
+    {
+      "imgUrl": "Imagenes/promoglobal.png",
+      "categoria": "Pc",
+      "nombre": "laptop",
+      "precio": "100$",
+      "descripcion": "Asus 4GB RAM con 128GB SSD y pantalla de 15 pulg",
+      "id": 2
+    },
+    {
+      "imgUrl": "Imagenes/promoglobal.png",
+      "categoria": "Pc",
+      "nombre": "laptop",
+      "precio": "200$",
+      "descripcion": "Dell 8GB RAM con 256GB SSD y pantalla de 15 pulg",
+      "id": 3
+    },
+    {
+      "imgUrl": "Imagenes/promovil.png",
+      "categoria": "Movil",
+      "nombre": "Samsung Galaxy s23",
+      "precio": "300$",
+      "descripcion": " 6GB RAM con 128GB SSD y pantalla de 6.7 pulg",
+      "id": 4
     }
   ]
 }

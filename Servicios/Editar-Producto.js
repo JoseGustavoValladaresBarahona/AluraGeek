@@ -3,14 +3,12 @@ const btn = document.querySelector('#btn');
 const formulario = document.querySelector('#formulario');
 const respuesta = document.querySelector('#respuesta');
 
-
 const getData = () => {
   const datos = new FormData(formulario);
   const datosProcesados = Object.fromEntries(datos.entries());
   formulario.reset();
   return datosProcesados;
 }
-
 
 const putData = async () => {
     const newUser = getData();
@@ -20,17 +18,16 @@ const putData = async () => {
     headers: {'Content-Type': 'application/json'},
      body: JSON.stringify(newUser)
     });
- alert(newUser.id)
-    if(response.ok){
+    if(response.ok && newUser.id!=null){
         const jsonResponse = await response.json();
-        const {imgUrl, categoria, nombre, precio, descripcion} = jsonResponse;
-       
+        const {imgUrl, categoria, nombre, precio, descripcion} = jsonResponse
+     
         respuesta.innerHTML = 
         `
         <br />
         <div> 
            Se actualizo con éxito el registro:
-          <img img: ${imgUrl} />
+          <p> img: ${imgUrl} </p>
           <p>nombre: ${nombre}</p> 
           <p>categoría: ${categoria}<p> 
           <p>precio: ${precio}</p>

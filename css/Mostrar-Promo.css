@@ -1,0 +1,9 @@
+
+ .Mostrar-Promo{
+   display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+ }
+ .Promo{
+   text-align: center;
+ }

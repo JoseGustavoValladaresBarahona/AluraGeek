@@ -11,7 +11,6 @@ const getData = () => {
   return datosProcesados;
 }
 
-
 const postData = async () => {
    const newUser = getData();
    try{
@@ -30,7 +29,7 @@ const postData = async () => {
         <br />
         <div> 
            Se registró con éxito la siguiente información:
-          <img img: ${imgUrl} />
+          <p> img: ${imgUrl} </p>
           <p>nombre: ${nombre}</p> 
           <p>categoría: ${categoria}<p> 
           <p>precio: ${precio}</p>

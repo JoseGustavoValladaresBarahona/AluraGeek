@@ -15,15 +15,21 @@
     <section>
      <div class='App'>
         <img src="Imagenes/logoAlura.png" width= '178px' height = '27px' alt='logo' class="logo"/>
-      
-        <input class='app__input' type="search" name="search" id="buscar" placeholder='¿Que deseas buscar?'>
-
+        <input class='app__input' type='search' name="search" id='buscar' placeholder='¿Que deseas buscar?'>
+       <button onclick="Buscar()" class="img-buscar">
+         <img src="Imagenes/buscar.png" width="15px" height="15px" ></button>
         <button class='app__btn' 
        onclick="location.href='sesion.html'">Login</button>
       </div>
     </section>
+    <!--Respuesta de busqueda -->
+    <section>
+       <br/>
+       <div id="respuesta1" class="Mostrar-Busqueda">
+       </div>
+    </section>
     
-    <section >
+    <section>
      <div class='promocion__descuento'>
        <img class='imagen__de__fondo'
          src="Imagenes/fondo.jpeg"
@@ -31,7 +37,7 @@
        <div class='promocion__titulo'>
          <h1>Marzo Promocional</h1>
          <p>Productos selecionados con 33% de descuento</p>
-         <button class='btn__promo' onclick="MostrarPromo()">Ver Productos</button>
+         <button class='btn__promo'        onclick="location.href='Mostrar-Promo.html'">Ver Productos</button>
        </div>
       </div>
       
@@ -99,8 +105,8 @@
      </div>
     </footer>
     </section>
-    <script src="Servicios/Mostrar-Producto.js"
-     src="Servicios/Buscar.js"></script>
+    <script src="Servicios/Mostrar-Producto.js"></script>
+    <script src="Servicios/Buscar.js"></script>
   </body>
 </html>
         

@@ -1,19 +1,19 @@
 
  const Buscar = ()=> {
-    let tbody=document.getElementById("buscar");
-    
-     fetch(`'http://localhost:5000/Productos?q=${tbody}'`)
+   const tbody=document.getElementById("respuesta1");
+   const valor = document.getElementById("buscar").value;
+
+  if(valor !==''){
+    tbody.innerHTML= '';
+     fetch(`http://localhost:5000/Productos?q=${valor}`)
       .then(res => res.json())
       .then(json => { 
            json.map(dato =>{
-             alert(dato)
-           tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id));*/
+           tbody.append(addElement(dato.imgUrl, dato.categoria, dato.nombre, dato.precio, dato.descripcion, dato.id));
         })
       })
-
-
-      function Buscarglobal(imgUrl,categoria, nombre, precio, descripcion, id){
-        alert(
+      
+      function addElement(imgUrl,categoria, nombre, precio, descripcion, id){
           let td =document.createElement("div");
            td.innerHTML =
          `<img src="${imgUrl}" width="100px" height="100px"/>
@@ -24,6 +24,12 @@
           <p>${id}</p>
            <a src='' href='#'>Ver Productos</a> `
           return td;
-          );
       }
+  }else{
+    tbody.innerHTML= '';
+    alert('No ha ingresado datos');
+  }
+  
+  
 }
+

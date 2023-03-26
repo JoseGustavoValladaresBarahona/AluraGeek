@@ -14,12 +14,17 @@
   <body>
     <section>
       <div class='App'>
-        <img src="Imagenes/logoAlura.png" width= '178px' height = '27px' alt='logo' class="logo"/>
-        <input class='app__input' type="search" placeholder='¿Que deseas buscar?'
-         />
+        <input class='app__input' type='search' name="search" id='buscar' placeholder='¿Que deseas buscar?'>
+       <button onclick="Buscar()" class="img-buscar">
+         <img src="Imagenes/buscar.png" width="15px" height="15px" ></button>
       </div>
     </section>
-    
+        <!--Respuesta de busqueda -->
+    <section>
+       <br/>
+       <div id="respuesta1" class="Mostrar-Busqueda">
+       </div>
+    </section>
     <section>
      <div class='ingreso'>
       <form id="formulario" data-form>
@@ -41,12 +46,12 @@
        <img src='Imagenes/logoAlura.png' class="logo"width= '178px' height = '27px' alt='logo'/>
        </div>
      <nav class='grid__nav'>
-       <a src='' href='#' class='grid__nav__link'>Quienes somos</a>
-       <a src='' href='#' class='grid__nav__link'>Política de privacidad</a>
-       <a src='' href='#' class='grid__nav__link'>Programa de fidelidad</a>
-       <a src='' href='#' class='grid__nav__link'>Nuestras Tiendas</a>
-       <a src='' href='#' class='grid__nav__link'>Quiero ser franquiciado</a>
-       <a src='' href='#' class='grid__nav__link'>Anunciese aquí</a>
+       <a href="Menu-General.html" class='grid__nav__link'>Quienes somos</a>
+       <a href='Menu-General.html' class='grid__nav__link'>Política de privacidad</a>
+       <a href='Menu-General.html' class='grid__nav__link'>Programa de fidelidad</a>
+       <a href='Menu-General.html' class='grid__nav__link'>Nuestras Tiendas</a>
+       <a href='Menu-General.html' class='grid__nav__link'>Quiero ser franquiciado</a>
+       <a href='Menu-General.html' class='grid__nav__link'>Anunciese aquí</a>
      </nav>
      <form action="http://localhost:5000/Mensajes" method="POST" class='grid__form'>
         <h3>Hable con nosotros</h3>
@@ -85,6 +90,8 @@
       </footer>
     </section>
     <script  src="Servicios/Eliminar-Dato.js">
+    </script>
+        <script  src="Servicios/Buscar.js">
     </script>
   </body>
 </html>
